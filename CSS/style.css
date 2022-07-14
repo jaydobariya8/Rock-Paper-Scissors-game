@@ -1,24 +1,10 @@
 .hight_h2{
-    height: 4rem;
-    
+    height: 4rem; 
 }
-.jethalal_Containerl, .flex_container{
+.flex_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.jethalal_Container img{
-    /* border: 1px solid black; */
-    min-width: 230px;
-    min-height: 170px;
-    margin: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.jethalal_Container h3{
-    font-size: 2rem;
-    display: flex;
-    justify-self: center;
-    align-items: center;
 }
 .flex_container img:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

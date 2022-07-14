@@ -38,25 +38,25 @@ function finalMessage([yourScore, botScore]) {
 }
 function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
     var imageDatabase = {
-        'rock': document.getElementById('Rock').src,
-        'paper': document.getElementById('Paper').src,
-        'paper': document.getElementById('Scissors').src
+        'rock': document.getElementById('rock').src,
+        'paper': document.getElementById('paper').src,
+        'scissors': document.getElementById('scissors').src
     }
-    document.getElementById('Rock').remove();
-    document.getElementById('Paper').remove();
-    document.getElementById('Scissors').remove();
+    document.getElementById('rock').remove();
+    document.getElementById('paper').remove();
+    document.getElementById('scissors').remove();
 
     var humenDiv = document.createElement('div');
     var botDiv = document.createElement('div');
     var messageDiv = document.createElement('div');
 
-    humenDiv.innerHTML = "<img src='"+ imageDatabase[humanImageChoice]+"' hight=150 width=150>";
+    humenDiv.innerHTML = "<img src='"+ imageDatabase[humanImageChoice]+"' hight=150 width=150 >";
     messageDiv.innerHTML ="<h1 style='color:" +finalMessage['color']+ "; padding:30px; '>"+ finalMessage['message']+"<h1>"
     botDiv.innerHTML = "<img src='"+ imageDatabase[botImageChoice]+"' hight=150 width=150>";
 
-    Document.getElementById('flex_container_id').appendChild(humenDiv);
-    Document.getElementById('flex_container_id').appendChild(botDiv);
-    Document.getElementById('flex_container_id').appendChild(messageDiv);
+    document.getElementById('flex_container_id').appendChild(humenDiv);
+    document.getElementById('flex_container_id').appendChild(messageDiv);
+    document.getElementById('flex_container_id').appendChild(botDiv);
 }
 
 
