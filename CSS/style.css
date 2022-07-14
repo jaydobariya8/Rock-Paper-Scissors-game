@@ -1,11 +1,39 @@
 .hight_h2{
     height: 4rem; 
 }
-.flex_container{
+.flex_container, .Play-Again, .message{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.Play-Again{
+    margin-top: 80px;
+}
 .flex_container img:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.play-Button{
+  height: 40px;
+  width: 155px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0 0 5px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.play-Button::after {
+    content: "";
+    background-color: #66f2d5;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+.message{
+    margin-top: 95px;
 }
