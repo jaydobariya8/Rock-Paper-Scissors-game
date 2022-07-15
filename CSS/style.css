@@ -37,3 +37,17 @@
 .message{
     margin-top: 95px;
 }
+
+
+/*     media query       */
+
+@media screen and (min-device-width: 445px) and (max-device-width: 535px) { 
+    .flex_container img{
+        margin: 25px;
+    }
+}
+@media screen and (min-device-width: 535px) and (max-device-width: 610px) { 
+    .flex_container img{
+        margin: 42px;
+    }
+}
